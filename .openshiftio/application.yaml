@@ -205,5 +205,5 @@ objects:
         app: nodejs-rest-http-crud
         version: '${RELEASE_VERSION}'
     stringData:
-      user: luke
-      password: secret
+      user: mary
+      password: password

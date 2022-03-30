@@ -51,17 +51,17 @@ items:
         containers:
         - env:
           - name: POSTGRESQL_DATABASE
-            value: my_data
+            value: db
           - name: POSTGRESQL_PASSWORD
-            value: secret
+            value: passowrd
           - name: POSTGRESQL_USER
-            value: luke
+            value: mary
           image: openshift/postgresql-92-centos7
-          name: my-database
+          name: postgresql-95-centos7
           ports:
           - containerPort: 5432
             protocol: TCP
-          resources: 
+          resources:
             limits:
               cpu: 400m
               memory: 256Mi
