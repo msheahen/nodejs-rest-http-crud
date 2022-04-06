@@ -1,0 +1,17 @@
+env:
+  pg_database: kong
+  pg_hos: kong-ingress-controller-postgresql
+  database: postgres
+  pg_user: kong
+  pg_password:
+    valueFrom:
+      secretKeyRef:
+        key: postgresql-password
+        name: kong-ingress-controller-postgresql
+postgresql:
+  enabled: true
+  postgresqlUsername: kong
+  postgresqlDatabase: kong
+  service:
+    port: 5432
+  existingSecret: kong-ingress-controller-postgresql
