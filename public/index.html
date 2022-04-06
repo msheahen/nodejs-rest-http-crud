@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>
-    Fruit Stock Management
+    Product Management
   </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wingcss/0.1.8/wing.min.css"/>
   <style>
@@ -22,8 +22,8 @@
     }
 
     body{
-      background:#333333;
-      color:white;
+      background:#f1f1f1;
+      color:black;
     }
   </style>
   <!-- Load AngularJS -->
@@ -125,9 +125,11 @@
 
 <div class="container">
 
-  <h1>Node.js Openshift Application with Postgresql</h1>
+  <h2>Sample Openshift Application</h2>
+  <p>This application has a connected Postgresql DB deployed on Openshift</p>
 
-  <div>
+
+
   <h3>Add/Edit a db fruit</h3>
 
   <form ng-submit="update()">
@@ -137,6 +139,7 @@
     </div>
     <input type="submit" value="Save"/>
   </form>
+
 
   <h3>Fruit List</h3>
 
@@ -151,7 +154,7 @@
     <div class="col-8"><a ng-click="edit( fruit )" class="btn">Edit</a> <a ng-click="remove( fruit )" class="btn">Remove</a></div>
   </div>
 
-    </div>
+</div>
 
 </div>
 
